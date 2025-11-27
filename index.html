@@ -1,0 +1,363 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+        Ailín Alvarez – Data Analyst | Business Analyst | People Analytics
+        </title>
+        <style>
+        :root {
+            --dark-blue: #1f2937;
+            --main-blue: #2563eb;
+            --light-blue: #93c5fd;
+            --light-gray: #f3f4f6;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: var(--light-gray);
+            color: var(--dark-blue);
+        }
+
+        header {
+            background: var(--dark-blue);
+            padding: 60px 20px;
+            text-align: center;
+            color: var(--white);
+        }
+
+        header h1 {
+            font-size: 2.6rem;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background: var(--white);
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: var(--dark-blue);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 12px;
+            margin: 25px 0;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            color: var(--main-blue);
+        }
+
+        h3 {
+            margin-top: 20px;
+            color: var(--dark-blue);
+        }
+
+        ul {
+            line-height: 1.8;
+        }
+
+        a {
+            color: var(--main-blue);
+            font-weight: bold;
+        }
+
+        footer {
+            background: var(--dark-blue);
+            color: var(--white);
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        /* Language toggle */
+        .lang-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 50;
+        }
+
+        .lang-toggle button {
+            background: var(--main-blue);
+            border: none;
+            padding: 10px 15px;
+            border-radius: 6px;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+
+        .es {
+            display: none;
+        }
+        </style>
+
+        <script>
+        function toggleLanguage(lang) {
+            document
+            .querySelectorAll(".en")
+            .forEach((e) => (e.style.display = lang === "en" ? "block" : "none"));
+            document
+            .querySelectorAll(".es")
+            .forEach((e) => (e.style.display = lang === "es" ? "block" : "none"));
+        }
+        </script>
+    </head>
+
+    <body>
+        <div class="lang-toggle">
+        <button onclick="toggleLanguage('en')">EN</button>
+        <button onclick="toggleLanguage('es')">ES</button>
+        </div>
+
+        <header>
+        <h1>Ailín Alvarez</h1>
+        <p class="en">
+            Data Analyst • Business Analyst • People Analytics • Operations
+        </p>
+        <p class="es">
+            Analista de Datos • Business Analyst • People Analytics • Operaciones
+        </p>
+        <p>
+            <a href="https://www.linkedin.com/in/ailin-alvarez" target="_blank"
+            >LinkedIn</a
+            >
+            | <a href="https://github.com/ailinalvarez" target="_blank">GitHub</a> |
+            <a href="mailto:ailinalvag@gmail.com">Email</a>
+        </p>
+        </header>
+
+        <nav>
+        <a href="#about">About / Sobre mí</a>
+        <a href="#skills">Skills / Habilidades</a>
+        <a href="#experience">Experience / Experiencia</a>
+        <a href="#projects">Projects / Proyectos</a>
+        <a href="#contact">Contact / Contacto</a>
+        </nav>
+
+        <!-- ABOUT -->
+        <section id="about" class="card">
+        <h2 class="en">About Me</h2>
+        <h2 class="es">Sobre Mí</h2>
+
+        <p class="en">
+            I am a People Operations Specialist transitioning into Data Analytics,
+            with strong experience in cross-functional coordination, process
+            optimization, and operational improvements.
+        </p>
+        <p class="es">
+            Soy Especialista en People Operations en transición al Análisis de
+            Datos, con experiencia en coordinación cross-functional, optimización de
+            procesos y mejoras operativas.
+        </p>
+
+        <p class="en">
+            My background in Special Education strengthened my ability to interpret
+            behaviour, identify patterns, communicate clearly, and design tailored
+            solutions.
+        </p>
+        <p class="es">
+            Mi formación en Educación Especial fortaleció mi capacidad para
+            interpretar comportamientos, identificar patrones, comunicar con
+            claridad y diseñar soluciones efectivas.
+        </p>
+
+        <p class="en">
+            I’m seeking roles in
+            <strong>Data Analytics, Business Analysis, People Analytics</strong> or
+            hybrid positions.
+        </p>
+        <p class="es">
+            Busco roles como
+            <strong>Data Analyst, Business Analyst, People Analytics</strong> o
+            posiciones híbridas.
+        </p>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="card">
+        <h2 class="en">Skills</h2>
+        <h2 class="es">Habilidades</h2>
+
+        <h3 class="en">Technical Skills</h3>
+        <h3 class="es">Habilidades Técnicas</h3>
+
+        <ul class="en">
+            <li>Python (Pandas, NumPy, Scikit-Learn, SciPy)</li>
+            <li>SQL</li>
+            <li>Power BI • Tableau • Advanced Excel</li>
+            <li>EDA • Data Cleaning • Forecasting • Machine Learning</li>
+            <li>Git / GitHub</li>
+            <li>Jira • Asana • Notion • Confluence</li>
+        </ul>
+
+        <ul class="es">
+            <li>Python (Pandas, NumPy, Scikit-Learn, SciPy)</li>
+            <li>SQL</li>
+            <li>Power BI • Tableau • Excel Avanzado</li>
+            <li>EDA • Limpieza de Datos • Forecasting • Machine Learning</li>
+            <li>Git / GitHub</li>
+            <li>Jira • Asana • Notion • Confluence</li>
+        </ul>
+
+        <h3 class="en">Soft Skills</h3>
+        <h3 class="es">Habilidades Blandas</h3>
+
+        <ul class="en">
+            <li>Fast learning • Empathy • Adaptability</li>
+            <li>Attention to detail • Problem solving</li>
+            <li>Communication • Autonomy • Organization</li>
+        </ul>
+
+        <ul class="es">
+            <li>Aprendizaje rápido • Empatía • Adaptabilidad</li>
+            <li>Atención al detalle • Resolución de problemas</li>
+            <li>Comunicación • Autonomía • Organización</li>
+        </ul>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section id="experience" class="card">
+        <h2 class="en">Professional Experience</h2>
+        <h2 class="es">Experiencia Profesional</h2>
+
+        <h3 class="en">
+            People Operations Specialist — Relex Solutions (2023–2024)
+        </h3>
+        <h3 class="es">
+            People Operations Specialist — Relex Solutions (2023–2024)
+        </h3>
+
+        <ul class="en">
+            <li>Project Manager for 60-person office expansion.</li>
+            <li>
+            Used surveys and data to detect overcrowding; presented findings to
+            leadership.
+            </li>
+            <li>Designed onboarding tracker improving HR-IT-Recruitment flow.</li>
+            <li>Managed full onboarding/offboarding process.</li>
+            <li>Organized events for 30–170 employees.</li>
+        </ul>
+
+        <ul class="es">
+            <li>
+            Project Manager en la expansión de una oficina para 60 personas.
+            </li>
+            <li>
+            Analicé datos y encuestas para identificar sobrepoblación; presenté
+            hallazgos a dirección.
+            </li>
+            <li>
+            Diseñé un sistema de onboarding mejorando el flujo HR-IT-Recruitment.
+            </li>
+            <li>Gestión completa de onboarding/offboarding.</li>
+            <li>Organización de eventos para 30–170 personas.</li>
+        </ul>
+
+        <h3 class="en">Business Operations Assistant — Klarna (2021–2022)</h3>
+        <h3 class="es">Business Operations Assistant — Klarna (2021–2022)</h3>
+
+        <ul class="en">
+            <li>Supported stakeholders in Fraud Prevention & Payment Methods.</li>
+            <li>Coordinated operations for 120–470 person teams.</li>
+            <li>Identified bottlenecks through interviews and analysis.</li>
+            <li>Recognized for accuracy, speed and practical solutions.</li>
+        </ul>
+
+        <ul class="es">
+            <li>Soporte a stakeholders en Fraud Prevention y Payment Methods.</li>
+            <li>Coordinación operativa para equipos de 120–470 personas.</li>
+            <li>Detecté problemas operativos mediante entrevistas y análisis.</li>
+            <li>Reconocida por precisión, velocidad y soluciones prácticas.</li>
+        </ul>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="card">
+        <h2 class="en">Featured Projects</h2>
+        <h2 class="es">Proyectos Destacados</h2>
+
+        <h3>Churn Prediction (Machine Learning)</h3>
+        <a href="https://github.com/ailinalvarez/CallMeMaybe" target="_blank"
+            >GitHub</a
+        >
+
+        <h3>Recommendation System (Collaborative Filtering)</h3>
+        <a
+            href="https://github.com/ailinalvarez/system_recommendation"
+            target="_blank"
+            >GitHub</a
+        >
+
+        <h3>Book Dashboard (SQL + Visualization)</h3>
+        <a href="https://github.com/ailinalvarez/app_de_libros" target="_blank"
+            >GitHub</a
+        >
+
+        <h3>Fitness Forecasting (85% accuracy)</h3>
+        <a href="https://github.com/ailinalvarez/fitness-model" target="_blank"
+            >GitHub</a
+        >
+
+        <h3>Data-Driven Decisions</h3>
+        <a
+            href="https://github.com/ailinalvarez/sprint10-data-driven-business-decisions"
+            target="_blank"
+            >GitHub</a
+        >
+
+        <h3>Business Analysis</h3>
+        <a
+            href="https://github.com/ailinalvarez/sprint9-businessAnalysis"
+            target="_blank"
+            >GitHub</a
+        >
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="card">
+        <h2 class="en">Contact</h2>
+        <h2 class="es">Contacto</h2>
+
+        <p>
+            <strong>Email:</strong>
+            <a href="mailto:ailinalvag@gmail.com">ailinalvag@gmail.com</a>
+        </p>
+        <p>
+            <strong>LinkedIn:</strong>
+            <a href="https://www.linkedin.com/in/ailin-alvarez"
+            >linkedin.com/in/ailin-alvarez</a
+            >
+        </p>
+        <p>
+            <strong>GitHub:</strong>
+            <a href="https://github.com/ailinalvarez">github.com/ailinalvarez</a>
+        </p>
+        </section>
+
+        <footer>© 2025 Ailín Alvarez — Professional Portfolio</footer>
+    </body>
+    </html>
