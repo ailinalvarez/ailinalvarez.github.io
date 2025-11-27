@@ -1,0 +1,91 @@
+:root {
+    --dark-blue: #1F2937;
+    --main-blue: #2563EB;
+    --light-blue: #93C5FD;
+    --light-gray: #F3F4F6;
+    --white: #FFFFFF;
+}
+
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: var(--light-gray);
+    color: var(--dark-blue);
+}
+
+/* Header */
+header {
+    background: var(--dark-blue);
+    padding: 60px 20px;
+    text-align: center;
+    color: var(--white);
+}
+
+header h1 {
+    font-size: 2.6rem;
+}
+
+/* Navigation */
+nav {
+    background: var(--white);
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    margin: 0 15px;
+    color: var(--dark-blue);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Cards */
+.card {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 12px;
+    margin: 25px auto;
+    max-width: 900px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    color: var(--main-blue);
+}
+
+a {
+    color: var(--main-blue);
+    font-weight: bold;
+}
+
+/* Language buttons */
+.lang-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.lang-toggle button {
+    background: var(--main-blue);
+    border: none;
+    padding: 10px 15px;
+    color: var(--white);
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+/* Footer */
+footer {
+    background: var(--dark-blue);
+    color: var(--white);
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
